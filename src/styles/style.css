@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 :root {
@@ -56,7 +62,7 @@ body {
   letter-spacing: 0.8px;
 }
 
-/* Carousel Styles */
+/* Carousel */
 .carousel {
   position: relative;
   width: 100%;
@@ -66,11 +72,13 @@ body {
 
 .carousel-inner {
   display: flex;
+  width: 100%;
   transition: transform 0.5s ease;
 }
 
 .carousel-item {
-  min-width: 100%;
+  width: 100%;
+  flex-shrink: 0;
   display: none;
 }
 
@@ -182,6 +190,7 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   backdrop-filter: blur(8px);
   transition: background-color 0.5s ease;
+  width: 100%;
 }
 
 .sobre-titulo {
@@ -280,9 +289,9 @@ body {
 
 .wrapped-btn {
   position: absolute;
-  bottom: 15%;
+  bottom: 12%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   background: #2140dcbf;
   color: #ffffff;
   border: 2px solid rgba(255, 255, 255, 0.4);
@@ -293,11 +302,12 @@ body {
   cursor: pointer;
   backdrop-filter: blur(10px);
   transition: all 0.3s ease;
+  max-width: 80%;
 }
 
 .wrapped-btn:hover {
   background: #0e2595bf;
-  transform: translate(-50%, -50%) scale(1.05);
+  transform: translateX(-50%) scale(1.05);
 }
 
 /* RESPONSIVIDADE */
@@ -340,6 +350,7 @@ body {
   .wrapped-btn {
     padding: 14px 34px;
     font-size: 1rem;
+    max-width: 90%;
   }
 }
 
