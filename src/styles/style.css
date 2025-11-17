@@ -317,7 +317,7 @@ body {
   }
 
   .main-container {
-    width: 92%;
+    width: 100%;
     max-width: 380px;
     gap: 35px;
   }
